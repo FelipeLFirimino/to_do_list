@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista Multiuso</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="content/paperlist.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <h1 class="text-center">Lista</h1>
+      <div class="conteudo container container-sm container-md rounded-3 p-3  border border-2 border-dark">
+        <section class="row">
+          <img
+            src="content/paperlist.svg"
+            id="img-paper"
+            class="col img-fluid"
+            alt="lista"
+          />
+
+          <form action="" class="adicionar col" id="novoItem">
+            <label for="nome">Objeto</label>
+            <input type="text" name="nome" id="nome" />
+            <label for="quantidade">Quantidade</label>
+            <input type="number" name="quantidade" id="quantidade" />
+            <input
+              type="submit"
+              value="Adicionar"
+              class="cadastrar"
+              id="cadastrar"
+            />
+          </form>
+        </section>
+      </div>
+      <section id="itens-lista" class="container p-4">
+        <h1 class="text-center">Itens</h1>
+        <ul class="lista col" id="lista"></ul>
+      </section>
+    </main>
+
+    <script src="js/dados.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
